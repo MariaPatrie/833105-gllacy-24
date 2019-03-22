@@ -22,7 +22,7 @@
        url("../fonts/robotobold.woff2") format("woff2");
 }
 
-/*body > * {
+body > * {
   outline: 2px solid rgba(0, 0 , 150, 0.4);
 }
 
@@ -48,7 +48,7 @@ body > * > * > * > * > * > * {
 
 body > * > * > * > * > * > * > * {
   outline: 2px solid rgba(0, 150 , 255, 0.4);
-}*/
+}
 
 body {
   margin: 0;
@@ -1040,6 +1040,8 @@ textarea:focus {
 }
 
 .filter fieldset:nth-child(2) {
+  position: relative;
+
   width: 220px;
 }
 
@@ -1105,9 +1107,17 @@ textarea:focus {
 }
 
 .price-controls {
+  position: absolute;
+  top: -2px;
+  left: 53px;
+
   width: 145px;
   
   padding-left: 3px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
 }
 
 .price-controls label {
@@ -1120,7 +1130,7 @@ textarea:focus {
 }
 
 .price-controls input {
-  width: 25px;
+  width: 24px;
   height: 16px;
   
   margin: 0;
