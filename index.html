@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Интернет-магазин мороженого GllacyShop</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -21,9 +21,9 @@
             <ul class="site-navigation">
               <li class="catalog-link"><a class="link-current site-nav-link" href="catalog.html">Каталог</a>
                 <div class="catalog-menu">
-                  <p class="new">Новинки</p>
+                  <a class="new">Новинки</a>
                   <ul class="new-list">
-                    <li><a>Сливочное</a></li>
+                    <li><a href="catalog.html">Сливочное</a></li>
                     <li><a>Щербеты</a></li>
                     <li><a>Фруктовый лед</a></li>
                     <li><a>Мелорин</a></li>
@@ -42,7 +42,7 @@
                 <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                   <p>
                     <label class="visually-hidden" for="user-search">Поиск</label>
-                    <input class="search" id="user-search" type="search" name="search" placeholder="Что ищем?">
+                    <input class="search input-size input-placeholder" id="user-search" type="search" name="search" placeholder="Что ищем?">
                   </p>
                 </form>
               </div>
@@ -53,11 +53,11 @@
                 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                   <p>
                     <label class="visually-hidden" for="user-email">Электронная почта</label>
-                    <input class="login-email" id="user-email" type="email" name="email" placeholder="Электронная почта">
+                    <input class="login-email input-size input-placeholder" id="user-email" type="email" name="email" placeholder="Электронная почта">
                   </p>
                   <p>
                     <label class="visually-hidden" for="user-password">Пароль</label>
-                    <input class="login-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                    <input class="login-password input-size input-placeholder" id="user-password" type="password" name="password" placeholder="Пароль">
                   </p>
                   <div class="container-mini">
                     <button class="button" type="submit">Войти</button>
@@ -113,12 +113,12 @@
           <section class="promo">
             <h2 class="visually-hidden">Акции</h2>
             <ul class="promo-list">
-              <li class="promo-item">
+              <li class="promo-item berry">
                 <h3>Малинка даром!</h3>
                 <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
                 <a class="button" href="#">Хочу варенье!</a>
               </li>
-              <li class="promo-item">
+              <li class="promo-item choco">
                 <h3>Шоколадки даром!</h3>
                 <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
                 <a class="button" href="#">Хочу шоколадки!</a>
@@ -130,26 +130,22 @@
             <h2 class="visually-hidden">Популярные товары</h2>
             <ul class="popular-list">
               <li class="popular-item">
-                <div class="flag">Хит</div>
-                <img src="img/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 <p class="popular-item-price"><span class="price">310</span>/кг</p>
                 <h3 class="popular-item-title"><a class="link-underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
               </li>
               <li class="popular-item">
-                <div class="flag">Хит</div>
-                <img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                <img src="img/product-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                 <p class="popular-item-price"><span class="price">380</span>/кг</p>
                 <h3 class="popular-item-title"><a class="link-underline">Сливочно-кофейное с кусочками шоколада</a></h3>
               </li>
               <li class="popular-item">
-                <div class="flag">Хит</div>
-                <img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <img src="img/product-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 <p class="popular-item-price"><span class="price">355</span>/кг</p>
                 <h3 class="popular-item-title"><a class="link-underline">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
               </li>
               <li class="popular-item">
-                <div class="flag">Хит</div>
-                <img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                <img src="img/product-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                 <p class="popular-item-price"><span class="price">415</span>/кг</p>
                 <h3 class="popular-item-title"><a class="link-underline">Сливочное крем-брюле с карамельной подливкой</a></h3>
               </li>
@@ -179,7 +175,7 @@
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                 <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="subscribe-email">Email</label>
-                  <input id="subscribe-email" type="email" name="email" placeholder="Электронная почта">
+                  <input class="input-size input-placeholder" id="subscribe-email" type="email" name="email" placeholder="Электронная почта">
                   <button class="button" type="submit">Отправить</button>
                 </form>
               </div>
@@ -189,7 +185,7 @@
 
         <section class="map">
           <h2 class="visually-hidden">Местоположение</h2>
-		  <iframe src="https://yandex.ru/map-widget/v1/-/CCqcELoW" width="1200" height="430"></iframe>
+		  <iframe class="map-iframe" src="https://yandex.ru/map-widget/v1/-/CCqcELoW" width="1200" height="430"></iframe>
           <div class="container">
             <div class="contacts">
               <h2 class="visually-hidden">Контактная информация</h2>
@@ -257,15 +253,15 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="feedback-item">
           <label class="visually-hidden" for="user-name">Имя</label>
-          <input class="feedback-user" id="user-name" type="text" name="name" placeholder="Как вас зовут?">
+          <input class="feedback-user input-size input-placeholder" id="user-name" type="text" name="name" placeholder="Как вас зовут?">
         </p>
         <p class="feedback-item">
           <label class="visually-hidden" for="email">Электронная почта</label>
-          <input class="feedback-email" id="email" type="email" name="email" placeholder="Ваша почта для ответа?">
+          <input class="feedback-email input-size input-placeholder" id="email" type="email" name="email" placeholder="Ваша почта для ответа?">
         </p>
         <p class="feedback-item">
           <label class="visually-hidden" for="user-note">Текст</label>
-          <textarea class="feedback-note" id="user-note" name="note" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+          <textarea class="feedback-note input-size input-placeholder" id="user-note" name="note" rows="10" placeholder="Напишите что-нибудь..."></textarea>
         </p>
         <button class="button modal-button">Отправить</button>
       </form>
