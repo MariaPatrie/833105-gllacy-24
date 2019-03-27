@@ -1266,7 +1266,7 @@ a {
   padding-left: 13px;
 }
 
-select {
+.sort-items {
   width: 220px;
   
   padding: 7px 10px;
@@ -1280,8 +1280,8 @@ select {
   border: none;
 }
 
-select:hover,
-select:focus {
+.sort-items:hover,
+.sort-items:focus {
   color: #323232;
 }
 
@@ -1689,8 +1689,6 @@ select:focus {
 }
 
 .reference-item {
-  position: relative;
-
   margin-top: 22px;
   padding-left: 56px;
 
@@ -1701,7 +1699,17 @@ select:focus {
           box-sizing: border-box;
 }
 
-.reference-item::before {
+.pic-ice-cream,
+.pic-cow,
+.pic-eco,
+.pic-thermometer {
+  position: relative;
+}
+
+.pic-ice-cream::before,
+.pic-cow::before,
+.pic-eco::before,
+.pic-thermometer::before {
   content: "";
   position: absolute;
   top: -12px;
@@ -1714,19 +1722,19 @@ select:focus {
   background-repeat: no-repeat;
 }
 
-.reference-item:nth-child(1)::before {
+.pic-ice-cream::before {
   background-image: url("../img/ice-cream.svg");
 }
 
-.reference-item:nth-child(2)::before {
+.pic-cow::before {
   background-image: url("../img/cow.svg");
 }
 
-.reference-item:nth-child(3)::before {
+.pic-eco::before {
   background-image: url("../img/eco.svg");
 }
 
-.reference-item:nth-child(4)::before {
+.pic-thermometer::before {
   background-image: url("../img/thermometer.svg");
 }
 
